@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <!--
+        Настройте политику безопасности содержимого в метатеге ниже. Добавьте "unsafe-inline" к default-src, чтобы включить встроенный код JavaScript.
+        Дополнительные сведения см. по ссылке http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-inline' 'self' phisix-api3.appspot.com/* data: www.phisix-api3.appspot.com/stocks.json  gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">  -->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/framework7.css" />
+        <title>currency</title>
+    </head>
+    <body>
+        <!-- App root element -->
+        <div id="app">
+            <!-- Statusbar overlay -->
+            <div id="preloader"></div>
+            <!-- Your main view, should have "view-main" class -->
+            <div class="view view-main">
+                <!-- Initial Page, "data-name" contains page name -->
+                <div data-name="home" class="page">
+                    <!-- Top Navbar -->
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="title">Currency</div>
+                        </div>
+                    </div>
+                    <div id="update" class="fab fab-center-bottom">
+                        <a href="#">
+                            <i class="icon f7-icons">update</i>
+                        </a>
+                    </div>
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+                        <div class="data-table card">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="label-cell">Name</th>
+                                        <th class="label-cell">Volume</th>
+                                        <th class="label-cell">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="currencyTable">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/framework7.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+</body>
+</html>
